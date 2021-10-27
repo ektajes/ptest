@@ -1,0 +1,74 @@
+<div class="container text-center">
+  <h3 class="text-center">Photo Listing</h3>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-4" *ngFor="let p of photo; let i=index">
+        <div class="box">
+          <!-- <p>{{p.thumbnailUrl}}</p> -->
+          <img src="../assets/{{p.thumbnailUrl}}">
+          <p><b>Title: </b>{{p.title}}</p>
+          <p><b>Id: </b>{{p.id}}</p>
+          <p><b>Url: </b><a href="{{p.url}}">Click here</a></p>
+
+          <button class="btn btn-success" *ngIf="showdel" id="btn1" (click)="toggle(p.id)">Compare</button>
+          <button class="btn btn-danger" *ngIf="!showdel" id="btn2" (click)="del(p.id)">Delete</button>
+        </div>
+      </div>
+      <!-- <div class="col-md-4">
+        <div class="box">
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+ 
+</div>
+
+<br>
+<br>
+<div class="container" style="margin:30px auto;display:block">
+  <form [formGroup]="myform">
+  <table border="1">
+    <tr colsapn="4" class="text-center"><b>COMPARISON TABLE</b></tr>
+   <tr>
+    <th>Photo</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Url</th>
+   </tr>
+
+   <!-- <tr *ngFor="let p of photo;let i=index" style="width:100%;margin:30px 0;border:1px solid gray"> -->
+    <!-- <app-comparison [p]="p">
+    </app-comparison> -->
+   
+  <!-- <td><input formControlName="image" type="image"><img src="../assets/{{p.thumbnailUrl}}"></td>
+  <td><input formControlName="id" type="number"></td>
+  <td><input formControlName="title" type="text"></td>
+  <td><input  formControlName="url" type="url"><a href="{{p.url}}">Url</a></td>
+  <td><button type="submit" style="display: none;">submit</button></td> -->
+  <tr>
+  
+  
+  <td><img src="{{thumbnailUrl1}}"><input formControlName="thumbnailUrl" type=""></td>
+  <td><input formControlName="id" type="number"></td>
+  <td><input formControlName="title" type="text"></td>
+  <td><a href="{{url1}}"><input  formControlName="url" type="url"></a></td>
+  <!-- <td><button type="submit" style="display: none;">submit</button></td> -->
+
+</tr>
+
+
+</table>
+
+
+
+</form>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
