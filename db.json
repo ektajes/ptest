@@ -1,0 +1,36 @@
+{
+  "posts":[
+    {
+      "albumId": 3,
+      "id": 1,
+      "title": "veritatis numquam eius",
+      "url": "https://via.placeholder.com/600/eaf2e1",
+      "thumbnailUrl": "1.png"
+    },
+    {
+      "albumId": 2,
+      "id": 2,
+      "title": "quia quasi enim voluptatem repellat sit sint",
+      "url": "https://via.placeholder.com/600/a19891",
+      "thumbnailUrl": "2.png"
+  
+    },
+    {
+      "albumId": 2,
+      "id": 3,
+      "title": "aliquam dolorem ut modi ratione ",
+      "url": "https://via.placeholder.com/600/b5205d",
+      "thumbnailUrl": "3.png"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
